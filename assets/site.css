@@ -1,14 +1,169 @@
-body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+/* General styles */
+html {
+  margin : 0;
+  padding: 0;
+  height : 100%;
 }
 
-img {
-  width: 100%;
-  display: block;
-  max-width: 200px;
+body {
+  margin          : 0;
+  padding         : 0;
+  height          : 100%;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center;
+  background-color: #Bebebe;
+  font-family     : "VT323", monospace;
+  font-weight     : 400;
+  font-style      : normal;
+  overflow-x      : hidden;
+}
+
+p {
+  font-size: 18px;
+  color    : #392b35;
+}
+
+a {
+  font-size      : 16px;
+  color          : #1f9afe;
+  text-decoration: none;
+}
+
+a.inner {
+  color          : #bb474f;
+  text-decoration: solid;
+}
+
+h1 {
+  font-size      : 32px;
+  text-decoration: none;
+}
+
+.noise-overlay {
+  position         : fixed;
+  top              : -50%;
+  left             : -50%;
+  right            : -50%;
+  bottom           : -50%;
+  width            : 200%;
+  height           : 200vh;
+  background       : transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation        : bg-animation .2s infinite;
+  opacity          : .9;
+  visibility       : visible;
+  pointer-events   : none;
+}
+
+/* Home page styles */
+.my_name {
+  text-decoration: none;
+  color          : #392b35;
+}
+
+.home-header {
+  display    : flex;
+  align-items: center;
+  gap        : 6px;
+}
+
+.home-header:hover span {
+  max-width: 500px;
+  color    : #7a9c96;
+}
+
+.home-header span {
+  max-width : 0;
+  display   : inline-block;
+  text-wrap : nowrap;
+  overflow  : hidden;
+  transition: max-width 0.5s ease-in-out;
+}
+
+.landing_img {
+  max-width : 500px;
+  max-height: 500px;
+  width     : 100%;
+  cursor    : pointer;
+}
+
+.landing_img:hover {
+  transform: scaleX(-1);
+}
+
+/* About page styles */
+.about-content {
+  text-align: center;
+  margin    : 0 auto;
+  max-width : 500px;
+  padding   : 0 2rem;
+}
+
+.rollover-images {
+  text-align: center;
+}
+
+.rollover {
+  position   : relative;
+  font-weight: bold;
+  cursor     : pointer;
+}
+
+.rollover img {
+  position  : absolute;
+  bottom    : 30px;
+  visibility: hidden;
+}
+
+.rollover:hover img {
+  visibility: visible;
+}
+
+/* Keyframes */
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  10% {
+    transform: translate(-5%, -5%)
+  }
+
+  20% {
+    transform: translate(-10%, 5%)
+  }
+
+  30% {
+    transform: translate(5%, -10%)
+  }
+
+  40% {
+    transform: translate(-5%, 15%)
+  }
+
+  50% {
+    transform: translate(-10%, 5%)
+  }
+
+  60% {
+    transform: translate(15%, 0)
+  }
+
+  70% {
+    transform: translate(0, 10%)
+  }
+
+  80% {
+    transform: translate(-15%, 0)
+  }
+
+  90% {
+    transform: translate(10%, 5%)
+  }
+
+  100% {
+    transform: translate(5%, 0)
+  }
 }
