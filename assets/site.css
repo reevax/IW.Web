@@ -59,7 +59,8 @@ h1 {
 
 /* Home page styles */
 .my_name {
-  text-decoration: none;
+  text-decoration:underline;
+  text-decoration-style: dotted;
   color          : #bb474f;
 }
 
