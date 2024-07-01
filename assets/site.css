@@ -13,7 +13,7 @@ body {
   flex-direction  : column;
   justify-content : center;
   align-items     : center;
-  background-color: #C0CAAD;
+  background-color: #F5F7F3;
   font-family     : "VT323", monospace;
   font-weight     : 400;
   font-style      : normal;
@@ -59,9 +59,9 @@ h1 {
 
 /* Home page styles */
 .my_name {
-  text-decoration:underline;
+  text-decoration:none;
   text-decoration-style: dotted;
-  color          : #bb474f;
+  color          : #ED7B84;
 }
 
 .home-header {
@@ -72,7 +72,7 @@ h1 {
 
 .home-header:hover span {
   max-width: 500px;
-  color    : #7a9c96;
+  color    : #72A1E5;
 }
 
 .home-header span {
