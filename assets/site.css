@@ -122,6 +122,10 @@ h1 {
   visibility: visible;
 }
 
+.larger-image{
+  max-width: 50px
+}
+
 /* Keyframes */
 @keyframes bg-animation {
   0% {
