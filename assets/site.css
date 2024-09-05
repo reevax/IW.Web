@@ -13,11 +13,12 @@ body {
   flex-direction  : column;
   justify-content : center;
   align-items     : center;
-  background-color: #F5F7F3;
+  background-color: #99b898;
   font-family     : "VT323", monospace;
   font-weight     : 400;
   font-style      : normal;
   overflow-x      : hidden;
+  min-height: 100vh;
 }
 
 p {
@@ -27,12 +28,12 @@ p {
 
 a {
   font-size      : 16px;
-  color          : #1f9afe;
+  color          : #0C3F90;
   text-decoration: none;
 }
 
 a.inner {
-  color          : #395E66;
+  color          : #900c3f;
   text-decoration: solid;
 }
 
@@ -59,27 +60,39 @@ h1 {
 
 /* Home page styles */
 .my_name {
+  width: 100%;
+  text-align: center;
+  color          : #900c3f;
+  z-index: 1000;
+}
+
+.my_loves {
   text-decoration:none;
   text-decoration-style: dotted;
-  color          : #ED7B84;
+  color          : #900c3f;
+  z-index: 1000;
 }
 
 .home-header {
-  display    : flex;
-  align-items: center;
-  gap        : 6px;
+  font-size: 16px; /* Adjust this value as needed */
+  margin: 0;
+  text-align: center;
+
+
 }
 
 .home-header:hover span {
-  max-width: 500px;
-  color    : #72A1E5;
+    max-width: 500px;
+
+    margin: 0 0.2em;
+    color: #e84a5f;
 }
 
 .home-header span {
-  max-width : 0;
-  display   : inline-block;
-  text-wrap : nowrap;
-  overflow  : hidden;
+  max-width: 0;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
   transition: max-width 0.5s ease-in-out;
 }
 
@@ -91,7 +104,7 @@ h1 {
 }
 
 .landing_img:hover {
-  transform: scaleX(-1);
+  transform: scale(1.05);
 }
 
 /* About page styles */
@@ -125,6 +138,13 @@ h1 {
 .larger-image{
   max-width: 200px;
   
+}
+
+.garden_img {
+  max-width : 500px;
+  max-height: 500px;
+  width     : 100%;
+  cursor    : pointer;
 }
 
 /* Keyframes */
@@ -173,3 +193,4 @@ h1 {
     transform: translate(5%, 0)
   }
 }
+
